@@ -1,0 +1,58 @@
+<div>
+  <style type="text/css">
+    .custom-series-selector-root {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: 1px solid #363636;
+      background-color: #444;
+      color: #fff;
+      font-weight: bold;
+      font-size: 17px;
+      position: relative;
+    }
+    .custom-series-selector-root:hover {
+      cursor: pointer;
+      color: #0089c4;
+      text-decoration: underline;
+      border-radius: 8px;
+    }
+    .custom-series-selector-popup {
+      display: none;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 0;
+      z-index: 2;
+      border-radius: 8px;
+      background-color: #444;
+      padding: 10px 0;
+      box-shadow: 0px 1px 3px 0px #000;
+    }
+    .custom-series-selector-series-list {
+      list-style: none;
+      margin: 0;
+    }
+    .custom-series-selector-series-list:hover > a {
+      color: white;
+    }
+    .custom-series-selector-root:hover .custom-series-selector-popup, .custom-series-selector-popup:hover {
+      display: block;
+    }
+    .custom-series-selector-link-to-series {
+      padding: 0 20px;
+    }
+    .custom-series-selector-link-to-series:hover {
+      background: #0089c4;
+    }
+  </style>
+  <div class="custom-series-selector-root">
+    Другие серии:
+    <div class="custom-series-selector-popup">
+      <ul class="custom-series-selector-series-list">
+        <a href="#"><li class="custom-series-selector-link-to-series">Первая серия</li></a>
+        <a href="#"><li class="custom-series-selector-link-to-series">Вторая серия</li></a>
+        <a href="#"><li class="custom-series-selector-link-to-series">Третия серия</li></a>
+      </ul>
+    </div>
+  </div>
+</div>
